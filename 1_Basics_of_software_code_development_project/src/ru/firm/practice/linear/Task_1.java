@@ -4,8 +4,6 @@ import java.util.Scanner;
 
 public class Task_1 {
 	
-	
-
 	public static void main(String[] args) {
 		
 		float a, b, c, z;
