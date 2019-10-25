@@ -1,14 +1,12 @@
 package ru.firm.practice.linear;
 
 import java.util.Scanner;
-import java.time.format.DateTimeFormatter;
 
 public class Task_5 {
 
 	public static void main(String[] args) {
 
-		long T, hours, minutes, seconds; // secondsWithoutHours;
-		String timeString;
+		long T, hours, minutes, seconds;
 
 		Scanner scannerObject = new Scanner(System.in);
 
