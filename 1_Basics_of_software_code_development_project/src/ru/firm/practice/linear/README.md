@@ -1,1 +1,1 @@
-![linear_programs](https://github.com/spertsev/JavaIntroOnline/blob/master/1_Basics_of_software_code_development_project/src/ru/firm/practice/linear/linear_tasks.png)
+![linear_tasks](https://github.com/spertsev/JavaIntroOnline/blob/master/1_Basics_of_software_code_development_project/src/ru/firm/practice/linear/linear_tasks.png)
