@@ -17,21 +17,21 @@ public class Task_1 {
 		System.out.print("The second angle:");
 		angle2 = scannerObject.nextInt();
 		scannerObject.close();
-		
+
 		if (angle1 > 0 && angle2 > 0 && (angle1 + angle2) < 180)
 			triangleExists = true;
 		else
 			triangleExists = false;
 		System.out.println("Does the triangle exist?: " + triangleExists);
-		
+
 		if (!triangleExists)
 			return;
-		
+
 		if (angle1 == 90 || angle2 == 90 || (angle1 + angle2) == 90)
 			isRectangular = true;
 		else
 			isRectangular = false;
-		System.out.print("Is the triangle rectangular?: " + isRectangular);	
+		System.out.print("Is the triangle rectangular?: " + isRectangular);
 
 	}
 }
