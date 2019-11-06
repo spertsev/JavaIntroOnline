@@ -6,21 +6,29 @@ public class Task_5 {
 
 	public static void main(String[] args) {
 
-		double e, a = 0, sum = 0;
+		double e, a, sum = 0;
 		int n = 1;
 		
 		Scanner scannerObject = new Scanner(System.in);
 		System.out.print("Input a double value of 'e':");
 		e = scannerObject.nextDouble();
 		scannerObject.close();
-				
-		while (sum < e) {
-			a = 1 / Math.pow(2, n) + 1 / Math.pow(3, n);
-			sum = sum + a;
-			n++;
+		
+		a = 1 / Math.pow(2, n) + 1 / Math.pow(3, n);
+		
+		if (Math.abs(a) < e) {
+			System.out.printf("ABS of the first value of 'a' equals %f is lower than 'e'", a);
+			return;
 		}
 		
-		System.out.print("n=" + n + " sum=" + sum);
+		do {
+			sum += a;
+			n++;
+			a = 1 / Math.pow(2, n) + 1 / Math.pow(3, n);
+							
+		} while (Math.abs(a) >= e);
+		
+		System.out.printf("Sum of the first %d members of the series does equal %f", (n - 1), sum);
 
 	}
 }	
