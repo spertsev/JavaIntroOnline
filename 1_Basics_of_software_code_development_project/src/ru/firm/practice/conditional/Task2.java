@@ -2,7 +2,7 @@ package ru.firm.practice.conditional;
 
 import java.util.Scanner;
 
-public class Task_2 {
+public class Task2 {
 
 	public static void main(String[] args) {
 
