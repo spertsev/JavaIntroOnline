@@ -2,7 +2,7 @@ package ru.firm.practice.loop;
 
 import java.util.Scanner;
 
-public class Task_1 {
+public class Task1 {
 
 	public static void main(String[] args) {
 

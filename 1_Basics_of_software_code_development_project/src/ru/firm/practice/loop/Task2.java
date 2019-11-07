@@ -2,7 +2,7 @@ package ru.firm.practice.loop;
 
 import java.util.Scanner;
 
-public class Task_2 {
+public class Task2 {
 
 	public static void main(String[] args) {
 
@@ -17,7 +17,7 @@ public class Task_2 {
 		h = scannerObject.nextInt();
 		scannerObject.close();
 
-		System.out.println("The function results (values of 'y'):");
+		System.out.print("The function result (value of 'y'):");
 		for (x = a; x <= b; x = x + h) {
 			if (x > 2)
 				y = x;
