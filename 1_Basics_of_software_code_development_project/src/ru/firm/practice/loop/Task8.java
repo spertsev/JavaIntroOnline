@@ -9,28 +9,56 @@ public class Task8 {
 		float firstFloat, secondFloat;
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Input the first float number:");
+		System.out.print("Input the first float number:");
 		firstFloat = sc.nextFloat();
-		System.out.println("Input the second float number:");
+		System.out.print("Input the second float number:");
 		secondFloat = sc.nextFloat();
+		sc.close();
 		
 		String firstFloatString = Float.toString(firstFloat);
 		String secondFloatString = Float.toString(secondFloat);
 		
-		char[] firstFloatStringArr = firstFloatString.toCharArray();
-		char[] secondFloatStringArr = secondFloatString.toCharArray();
+		char[] firstFloatArr = firstFloatString.toCharArray();
+		char[] secondFloatArr = secondFloatString.toCharArray();
+		char[] resultArr; 
 		
-		int i, j;
+		if (firstFloatArr.length < secondFloatArr.length) {
+			resultArr = new char[firstFloatArr.length];
+		} else {
+			resultArr = new char[secondFloatArr.length];
+		}
 		
-		System.out.println(firstFloatString + "\n" + )
 		
-		for (i = 0; i <= firstFloatString.length(); i++) {
-			for (j = 0; j <= secondFloatString.length(); j++) {
-				if (secondFloatStringArr[j] == firstFloatStringArr[i]) {
-					System.out.println("Numeral " + secondFloatStringArr[j] + " is in both input numbers");
+		int i, j, k = 0, l;
+		boolean digitIsInResultArr = false;
+		
+		
+		for (i = 0; i < firstFloatArr.length; i++) {
+			for (j = 0; j < secondFloatArr.length; j++) {
+				if (secondFloatArr[j] == firstFloatArr[i]) {
+					//System.out.println(secondFloatArr[j] + " is in the both entered numbers");
+					
+					for (l = 0; l < resultArr.length; l++) {
+						if (resultArr[l] == secondFloatArr[j]) {
+							digitIsInResultArr = true;
+							continue;
+						}
+					}
+					
+					if (digitIsInResultArr == true || firstFloatArr[i] == '.' || secondFloatArr[j] == '.') {
+						continue;
+					} else {
+						
+					}
+										
+					resultArr[k] = secondFloatArr[j];
+					k++;
 				}
 			}
 		}
+		
+		String resultArrString = new String(resultArr); 
+		System.out.println("Digits, which are in the both entered numbers: " + resultArrString);
 		
 	}
 
