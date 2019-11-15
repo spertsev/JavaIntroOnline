@@ -30,13 +30,15 @@ public class Task8 {
 		
 		
 		int i, j, k = 0, l;
-		boolean digitIsInResultArr = false;
+		boolean digitIsInResultArr;
 		
 		
 		for (i = 0; i < firstFloatArr.length; i++) {
 			for (j = 0; j < secondFloatArr.length; j++) {
 				if (secondFloatArr[j] == firstFloatArr[i]) {
-					//System.out.println(secondFloatArr[j] + " is in the both entered numbers");
+					System.out.println(secondFloatArr[j] + " is in the both entered numbers");
+					
+					digitIsInResultArr = false;
 					
 					for (l = 0; l < resultArr.length; l++) {
 						if (resultArr[l] == secondFloatArr[j]) {
