@@ -36,7 +36,6 @@ public class Task8 {
 		for (i = 0; i < firstFloatArr.length; i++) {
 			for (j = 0; j < secondFloatArr.length; j++) {
 				if (secondFloatArr[j] == firstFloatArr[i]) {
-					System.out.println(secondFloatArr[j] + " is in the both entered numbers");
 					
 					digitIsInResultArr = false;
 					
