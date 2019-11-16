@@ -48,9 +48,7 @@ public class Task8 {
 					
 					if (digitIsInResultArr == true || firstFloatArr[i] == '.' || secondFloatArr[j] == '.') {
 						continue;
-					} else {
-						
-					}
+					} 
 										
 					resultArr[k] = secondFloatArr[j];
 					k++;
