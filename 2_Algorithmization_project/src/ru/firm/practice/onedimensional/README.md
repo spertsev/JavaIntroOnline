@@ -1,1 +1,1 @@
- ![onedimensional_tasks]()
+ ![onedimensional_tasks](https://github.com/spertsev/JavaIntroOnline/blob/master/2_Algorithmization_project/src/ru/firm/practice/onedimensional/onedimensional_tasks.png)
