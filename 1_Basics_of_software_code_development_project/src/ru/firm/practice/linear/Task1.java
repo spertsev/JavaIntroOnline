@@ -18,3 +18,4 @@ public class Task1 {
 		System.out.println("z=" + z);
 	}
 }
+
