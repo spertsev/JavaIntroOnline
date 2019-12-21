@@ -12,9 +12,9 @@ public class Task1 {
 		b = scannerObject.nextFloat();
 		System.out.print("Input a float value of 'c':");
 		c = scannerObject.nextFloat();
+		scannerObject.close();
 		System.out.println("Calculating a result of function 'z = ((a - 3) * b / 2) + c'");
 		z = ((a - 3) * b / 2) + c;
 		System.out.println("z=" + z);
-		scannerObject.close();
 	}
 }
