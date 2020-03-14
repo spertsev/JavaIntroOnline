@@ -37,7 +37,7 @@ public class Task1 {
 
 	}
 
-	public static int typeIntegerValue(Scanner scanner) {
+	private static int typeIntegerValue(Scanner scanner) {
 		while (!scanner.hasNextInt()) {
 			System.out.print("You've typed a not integer value!");
 			scanner.next();
