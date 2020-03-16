@@ -8,7 +8,9 @@ package ru.firm.practice.simplest_classes_and_objects.task3_student;
 public class Main {
 
 	public static void main(String[] args) {
+		
 		Student[] ourStudents = new Student[10];
+		
 		ourStudents[0] = new Student("Иванов", "И.И.", "ТР-1", new int[] {9,10,9,9,9});
 		ourStudents[1] = new Student("Петров", "А.И.", "ТР-2", new int[] {9,1,9,9,9});
 		ourStudents[2] = new Student("Сидоров", "Б.И.", "ТР-3", new int[] {9,9,2,9,9});
@@ -19,19 +21,30 @@ public class Main {
 		ourStudents[7] = new Student("Петровский", "Ё.И.", "ТР-2", new int[] {9,9,9,9,7});
 		ourStudents[8] = new Student("Сидоровский", "Ж.И.", "ТР-3", new int[] {9,9,9,8,9});
 		ourStudents[9] = new Student("Водкинский", "З.И.", "ТР-1", new int[] {9,9,9,9,10});
+		
 		System.out.println("Good students list: ");
-		for (Student ourStudent : ourStudents) {
-			int[] ourStudentGrades = ourStudent.getGrades();
-			int badGradesCount = 0;
-			for (int ourStudentGrade : ourStudentGrades) {
+		
+		for (Student currentStudent : ourStudents) {
+					
+			int[] currentStudentGrades;
+			int badGradesCount;
+			
+			currentStudentGrades = currentStudent.getGrades();
+			badGradesCount = 0;
+			
+			for (int ourStudentGrade : currentStudentGrades) {
 				if (ourStudentGrade < 9) {
 					badGradesCount++;
 					break;
 				}
 			}
+			
 			if (badGradesCount == 0) {
-				System.out.println(ourStudent.getSurname() + " " + ourStudent.getGroupNumber());
+				System.out.println(currentStudent.getSurname() + " " + currentStudent.getGroupNumber());
 			}
+			
 		}
+		
 	}
+	
 }
