@@ -1,9 +1,10 @@
 package ru.firm.practice.simplest_classes_and_objects.task1_test1;
 
-/*	
- * 	1. Создайте класс Test1 двумя переменными. Добавьте метод вывода на экран и методы изменения этих
- *	переменных. Добавьте метод, который находит сумму значений этих переменных, и метод, который находит
- *	наибольшее значение из этих двух переменных.
+/**
+ * 1. Создайте класс Test1 двумя переменными. Добавьте метод вывода на экран и
+ * методы изменения этих переменных. Добавьте метод, который находит сумму
+ * значений этих переменных, и метод, который находит наибольшее значение из
+ * этих двух переменных.
  */
 
 public class Main {
@@ -31,39 +32,27 @@ class Test1 {
 	private int secondVariable;
 
 	public int getFirstVariable() {
-
 		return this.firstVariable;
-
 	}
 
 	public int getSecondVariable() {
-
 		return this.secondVariable;
-
 	}
 
 	public void setFirstVariable(int firstVariable) {
-
 		this.firstVariable = firstVariable;
-
 	}
 
 	public void setSecondVariable(int secondVariable) {
-
 		this.secondVariable = secondVariable;
-
 	}
 
 	public int sumOfFirstVariableAndSecondVariable() {
-
 		return this.firstVariable + this.secondVariable;
-
 	}
 
 	public int maximumOfFirstVariableAndSecondVariable() {
-
-		return Math.max(firstVariable, secondVariable);
-
+		return Math.max(this.firstVariable, this.secondVariable);
 	}
 
 }
