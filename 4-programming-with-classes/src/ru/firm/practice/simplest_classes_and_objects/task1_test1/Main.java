@@ -31,14 +31,6 @@ class Test1 {
 	private int firstVariable;
 	private int secondVariable;
 
-	public int getFirstVariable() {
-		return this.firstVariable;
-	}
-
-	public int getSecondVariable() {
-		return this.secondVariable;
-	}
-
 	public void setFirstVariable(int firstVariable) {
 		this.firstVariable = firstVariable;
 	}
@@ -48,11 +40,19 @@ class Test1 {
 	}
 
 	public int sumOfFirstVariableAndSecondVariable() {
-		return this.firstVariable + this.secondVariable;
+		return firstVariable + secondVariable;
+	}
+
+	public int getFirstVariable() {
+		return firstVariable;
+	}
+
+	public int getSecondVariable() {
+		return secondVariable;
 	}
 
 	public int maximumOfFirstVariableAndSecondVariable() {
-		return Math.max(this.firstVariable, this.secondVariable);
+		return Math.max(firstVariable, secondVariable);
 	}
 
 }
