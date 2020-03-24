@@ -1,15 +1,39 @@
-1-basics-of-software-code-development/.classpath
-1-basics-of-software-code-development/.project
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+# IntelliJ IDEA
+.idea/
+target/
+
+# MacOS
+.DS_Store
+
+# Eclipse
+.settings/
+.classpath
+.project
+
+# Current projects specific files
 1-basics-of-software-code-development/.gitignore
-1-basics-of-software-code-development/bin/*
-
-2-algorithmization/.classpath
-2-algorithmization/.project
 2-algorithmization/.gitignore
-2-algorithmization/bin/*
-
-4-programming-with-classes/.classpath
-4-programming-with-classes/.project
 4-programming-with-classes/.gitignore
-4-programming-with-classes/bin/*
-4-programming-with-classes/.settings
