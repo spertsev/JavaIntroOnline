@@ -7,14 +7,10 @@ package ru.firm.practice.onedimensional;
 public class Task2 {
 
 	public static void main(String[] args) {
-		double Z;
-		int replacementsCount;
-		int i;
-
 		double[] realNumbers = { -1, -3, 4, 8, 5, 22, 17 };
-		Z = 4D;
-		replacementsCount = 0;
-		i = 0;
+		double Z = 4D;
+		int replacementsCount = 0;
+		int i = 0;
 
 		for (double currentNumber : realNumbers) {
 			if (currentNumber > Z) {
