@@ -7,21 +7,17 @@ package ru.firm.practice.onedimensional;
 public class Task4 {
 
 	public static void main(String[] args) {
-		double[] realNumbers = { 0, -1.1, 55.5, -31.31, -4.4, 1.1 };
-		double maxElement = realNumbers[0];
-		double minElement = realNumbers[0];
+		double[] realNumbers = { 0, -1.1, 55.5, -1, -4.4, 1.1 };
 		int i = 0;
 		int indexOfMaxElement = 0;
 		int indexOfMinElement = 0;
 		double[] temporaryArray = new double[realNumbers.length];
 
 		for (double currentNumber : realNumbers) {
-			if (currentNumber > maxElement) {
-				maxElement = currentNumber;
+			if (currentNumber > realNumbers[indexOfMaxElement]) {
 				indexOfMaxElement = i;
 			}
-			if (currentNumber < minElement) {
-				minElement = currentNumber;
+			if (currentNumber < realNumbers[indexOfMinElement]) {
 				indexOfMinElement = i;
 			}
 			i++;
