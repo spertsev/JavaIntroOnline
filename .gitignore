@@ -36,4 +36,5 @@ target/
 # Current projects specific files
 1-basics-of-software-code-development/.gitignore
 2-algorithmization/.gitignore
+3-strings-and-basics-of-text-processing/.gitignore
 4-programming-with-classes/.gitignore
