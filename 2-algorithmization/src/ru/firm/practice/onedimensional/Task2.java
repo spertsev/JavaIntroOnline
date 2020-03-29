@@ -7,7 +7,7 @@ package ru.firm.practice.onedimensional;
 public class Task2 {
 
 	public static void main(String[] args) {
-		double[] realNumbers = { -1, -3, 4, 8, 5, 22, 17 };
+		double[] realNumbers = { -1.1, -3.3, 4.4, 8.8, 5.5, 22.22, 17.17 };
 		double Z = 4D;
 		int replacementsCount = 0;
 		int i = 0;
