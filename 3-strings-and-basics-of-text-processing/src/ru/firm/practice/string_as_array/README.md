@@ -1,3 +1,4 @@
+https://github.com/Java0Tutor/3_Strings_and_basics_of_text_processing/blob/master/Practice%20(tasks).pdf
 Работа со строкой как с массивом символов
 1. Дан массив названий переменных в camelCase. Преобразовать названия в snake_case.
 2. Замените в строке все вхождения 'word' на 'letter'.
