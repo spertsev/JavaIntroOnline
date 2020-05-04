@@ -1,4 +1,5 @@
 https://github.com/Java0Tutor/3_Strings_and_basics_of_text_processing/blob/master/Practice%20(tasks).pdf
+
 Работа со строкой как с объектом типа String или StringBuilder
 1. Дан текст (строка). Найдите наибольшее количество подряд идущих пробелов в нем.
 2. В строке вставить после каждого символа 'a' символ 'b'.
