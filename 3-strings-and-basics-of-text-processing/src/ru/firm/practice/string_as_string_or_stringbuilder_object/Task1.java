@@ -8,7 +8,7 @@ package ru.firm.practice.string_as_string_or_stringbuilder_object;
 public class Task1 {
 
 	public static void main(String[] args) {
-		String sourceStr = " Mama myla  ramu ";
+		String sourceStr = "Mamamylaramu ";
 		String searchingLetter = " ";
 		String previousLetter = "";
 		int lengthOfCurrentSpacesSubstring = 0;
@@ -27,9 +27,9 @@ public class Task1 {
 			if (i == (sourceStr.length() - 1) && currentLetter.equals(searchingLetter)) {
 				/* A case of a space at the end */
 
-				lengthOfCurrentSpacesSubstring = !previousLetter.equals(searchingLetter)
-						? lengthOfCurrentSpacesSubstring + 1 /* A case of one space at the end */
-						: lengthOfCurrentSpacesSubstring + 2; /* A case of two spaces at the end (two and more) */
+				lengthOfCurrentSpacesSubstring = previousLetter.equals(searchingLetter)
+						? lengthOfCurrentSpacesSubstring + 2 /* A case of two spaces at the end (two and more) */
+						: lengthOfCurrentSpacesSubstring + 1; /* A case of one space at the end */
 
 				endOfCurrentSpacesSubstring = true;
 
