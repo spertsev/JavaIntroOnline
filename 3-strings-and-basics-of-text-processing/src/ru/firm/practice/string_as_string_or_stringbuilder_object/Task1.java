@@ -29,7 +29,7 @@ public class Task1 {
 
 				lengthOfCurrentSpacesSubstring = !previousLetter.equals(searchingLetter)
 						? lengthOfCurrentSpacesSubstring + 1 /* A case of one space at the end */
-						: lengthOfCurrentSpacesSubstring + 2; /* A case of two spaces at the end */
+						: lengthOfCurrentSpacesSubstring + 2; /* A case of two spaces at the end (two and more) */
 
 				endOfCurrentSpacesSubstring = true;
 
